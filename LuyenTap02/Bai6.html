@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<p id="pt"></p>
+<!--<input type="number" id="num3">-->
+<button onclick="hamTimX()">submit</button>
+
+<script>
+    function hamTimX() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("pt").innerText=("Phuong trinh co dang:"+num1+"x"+"+"+num2+"=0");
+        //let num3 = parseFloat(document.getElementById("num3").value);
+        let result=(-num2)/num1;
+        if(num1!=0)
+        {
+                alert("Ket qua la:"+result);
+        }
+        else if(num1==0&&num2==0)
+        {
+            alert("vo so nghiem");
+        }
+        else
+        {
+            alert("vo nghiem");
+        }
+    }
+</script>
+
+</body>
+</html>

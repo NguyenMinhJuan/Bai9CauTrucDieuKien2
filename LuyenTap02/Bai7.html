@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="number" id="num3">
+<p id="pt">kq</p>
+<button onclick="hamTimX()">submit</button>
+<script>
+    function hamTimX() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+        document.getElementById("pt").innerHTML = (num1 + "x" + "<sup>2</sup>" + num2 + "x" + num3);
+        let delta = (Math.pow(num2, 2)) - 4 * num1 * num2;
+        let nghiemDuyNhat = -num2 / (2 * num1);
+        if (delta < 0) {
+            alert("Vo nghiem");
+
+        } else if (delta == 0) {
+            alert("Phuong trinh co nghiem duy nhat " + nghiemDuyNhat);
+        } else {
+            let nghiem1 = (-num2 + Math.SQRT2(delta)) / (2 * num1);
+            let nghiem2 = (-num2 - Math.SQRT2(delta)) / (2 * num1);
+            alert("Ket qua nghiem thu nhat " + nghiem1 + "" + "nghiem thu hai" + nghiem2);
+        }
+
+    }
+</script>
+</body>
+</html>

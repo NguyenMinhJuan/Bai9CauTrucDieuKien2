@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhap nhiet do can doi oC" id="temp">
+<button onclick="hamDoi()">submit</button>
+<script>
+    function hamDoi() {
+        let temp = parseInt(document.getElementById("temp").value);
+        let result = temp * (9 / 5) + 32;
+        alert("ket qua:" + result);
+    }
+</script>
+
+</body>
+</html>

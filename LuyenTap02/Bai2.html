@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhap do dai can doi meter" id="length">
+<button onclick="hamDoi()">submit</button>
+<script>
+    function hamDoi() {
+        let length = parseInt(document.getElementById("length").value);
+        let result = length*3.2808;
+        alert("ket qua:" + result);
+    }
+</script>
+</body>
+</html>
