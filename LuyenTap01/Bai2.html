@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="nhap tuoi cua ban" id="age">
+<button onclick="getAge()">submit</button>
+<script>
+    function getAge() {
+        let age = parseInt(document.getElementById("age").value);
+        if (age < 16) {
+            alert("khong du dieu kien vao nhom lop 10");
+        } else {
+            alert("du dieu kien vao nhom lop 10");
+        }
+    }
+</script>
+</body>
+</html>

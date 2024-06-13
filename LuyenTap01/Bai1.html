@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1" placeholder="nhap so thu nhat">
+
+<input type="number" id="num2" placeholder="nhap so thu hai">
+<input type="button" value="submit" onclick="tinhToan()">
+<h1 id="result">Ket qua</h1>
+<script>
+    function tinhToan() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (num1%num2==0)
+        {
+            document.getElementById("result").innerHTML="<h1>so thu nhat chia het cho so thu hai</h1>";
+
+        }
+        else
+        {
+            document.getElementById("result").innerHTML="<h1>so thu nhat ko chia het cho so thu hai</h1>";
+        }
+    }
+</script>
+</body>
+</html>
